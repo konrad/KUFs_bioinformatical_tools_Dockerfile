@@ -30,15 +30,22 @@ RUN  wget -P /tmp https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x8
 	  bioconductor-deseq2 \
 	  blast-plus \
 	  bwa \
+	  circos \
+	  emboss \
 	  fastqc \
+	  fastx-toolkit \
+	  gatk4 \
+	  kallisto \
+	  minialign \
 	  samtools \
 	  segemehl \
+	  sra-tools \
 	  star \
-          fastx-toolkit
+	  ucsc-wigtobigwig
 
 ENV PATH=/opt/conda/bin:${PATH}
 
-RUN pip install cutadapt
+RUN pip install cutadapt reademption
 
 RUN mkdir /data
 WORKDIR /data
