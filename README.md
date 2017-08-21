@@ -1,2 +1,2 @@
-# A Dockerfile for a bioinformatical tool collection
+# A Dockerfile for collection of bioinformatical tools
 
