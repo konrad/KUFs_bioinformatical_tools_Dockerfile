@@ -7,7 +7,13 @@ LABEL description="A collection of bioinformatical tools (by Konrad Förstner)"
 RUN apt-get clean all \
     && apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y wget bzip2 gzip pbzip2 pgzip parallel
+    && apt-get install -y \
+	 bzip2 \
+	 gzip \
+	 parallel \	 
+	 pbzip2 \
+	 xz-utils \
+         wget
 
 # Conda
 RUN  wget -P /tmp https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \
