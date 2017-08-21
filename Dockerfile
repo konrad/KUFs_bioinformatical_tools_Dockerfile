@@ -22,11 +22,13 @@ RUN  wget -P /tmp https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x8
      && export PATH=/opt/conda/bin:${PATH} \
      && conda config --add channels r \
      && conda config --add channels bioconda \
-     && conda config --add channels biobuilds \     
+     && conda config --add channels biobuilds \
+     && conda config --add channels biocore \
      && conda upgrade conda \
      && conda install \
 	  bedtools \
 	  bioconductor-deseq2 \
+	  blast-plus \
 	  bwa \
 	  fastqc \
 	  samtools \
