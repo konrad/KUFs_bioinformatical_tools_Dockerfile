@@ -2,7 +2,7 @@ FROM ubuntu:17.04
 
 MAINTAINER Konrad Förstner <konrad@foerstner.org>
 
-LABEL description="A bioinformatics tool collection (by Konrad Förstner)"
+LABEL description="A collection of bioinformatical tools (by Konrad Förstner)"
 
 RUN apt-get clean all \
     && apt-get update \
