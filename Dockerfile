@@ -9,6 +9,7 @@ RUN apt-get clean all \
     && apt-get upgrade -y \
     && apt-get install -y \
 	 bzip2 \
+	 curl \
 	 gzip \
 	 parallel \	 
 	 pbzip2 \
