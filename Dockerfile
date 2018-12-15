@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:18.10
 
 MAINTAINER Konrad Förstner <konrad@foerstner.org>
 
